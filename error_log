@@ -1,0 +1,9 @@
+[21-Sep-2018 06:55:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/khirdsco/public_html/assign/mohit/libs/Database.php:8
+Stack trace:
+#0 /home/khirdsco/public_html/assign/mohit/libs/Database.php(8): PDO->__construct('mysql:host=127....', 'root', '1234')
+#1 /home/khirdsco/public_html/assign/mohit/libs/Model.php(5): Database->__construct('mysql', '127.0.0.1', 'vinh_moviezone_...', 'root', '1234')
+#2 /home/khirdsco/public_html/assign/mohit/model/Director_Model.php(6): Model->__construct()
+#3 /home/khirdsco/public_html/assign/mohit/controller/addMovie.php(70): Director_Model->__construct()
+#4 /home/khirdsco/public_html/assign/mohit/view/update_movie.php(3): include('/home/khirdsco/...')
+#5 {main}
+  thrown in /home/khirdsco/public_html/assign/mohit/libs/Database.php on line 8
